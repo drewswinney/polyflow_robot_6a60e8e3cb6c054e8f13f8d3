@@ -71,7 +71,7 @@ def generate_launch_description():
             output="screen",
             additional_env={
                 "POLYFLOW_NODE_ID": "6a60ec2dcb6c054e8f13ff4e",
-                "POLYFLOW_PARAMETERS": json.dumps(json.loads('{"device_index":0,"poll_rate_hz":60,"deadzone":0.05,"max_linear_speed":1,"max_angular_speed":2,"wheel_separation":0.3,"output_mode":"diff_drive"}')),
+                "POLYFLOW_PARAMETERS": json.dumps(json.loads('{"device_index":0,"poll_rate_hz":60,"deadzone":0.05,"output_mode":"diff_drive"}')),
                 "POLYFLOW_CONFIGURATION": json.dumps(json.loads('{"namespace":null,"rate_hz":60,"lifecycle":null}')),
                 "POLYFLOW_PINS": json.dumps(json.loads('[{"pin_id":"69a3e702cd15153dec61d7da:axes","name":"axes","direction":"output","msg_type":"polyflow_msgs/GamepadAxes"},{"pin_id":"69a3e702cd15153dec61d7da:buttons","name":"buttons","direction":"output","msg_type":"polyflow_msgs/GamepadButtons"},{"pin_id":"69a3e702cd15153dec61d7da:cmd_vel","name":"cmd_vel","direction":"output","msg_type":"geometry_msgs/Twist"}]')),
                 "POLYFLOW_INBOUND_CONNECTIONS": json.dumps(json.loads('[]')),
@@ -86,7 +86,7 @@ def generate_launch_description():
             output="screen",
             additional_env={
                 "POLYFLOW_NODE_ID": "6a60ec32cb6c054e8f13ff5f",
-                "POLYFLOW_PARAMETERS": json.dumps(json.loads('{"wheel_radius":0.05,"wheel_separation":0.3,"max_wheel_speed":1,"teleop_timeout_s":1}')),
+                "POLYFLOW_PARAMETERS": json.dumps(json.loads('{"teleop_timeout_s":1}')),
                 "POLYFLOW_CONFIGURATION": json.dumps(json.loads('{"namespace":null,"rate_hz":50,"lifecycle":null}')),
                 "POLYFLOW_PINS": json.dumps(json.loads('[{"pin_id":"69a3e71bcd15153dec61d7f8:cmd_vel_teleop","name":"cmd_vel_teleop","direction":"input","msg_type":"geometry_msgs/Twist"},{"pin_id":"69a3e71bcd15153dec61d7f8:cmd_vel_automated","name":"cmd_vel_automated","direction":"input","msg_type":"geometry_msgs/Twist"},{"pin_id":"69a3e71bcd15153dec61d7f8:front_left_motor","name":"front_left_motor","direction":"output","msg_type":"std_msgs/Float64"},{"pin_id":"69a3e71bcd15153dec61d7f8:back_left_motor","name":"back_left_motor","direction":"output","msg_type":"std_msgs/Float64"},{"pin_id":"69a3e71bcd15153dec61d7f8:front_right_motor","name":"front_right_motor","direction":"output","msg_type":"std_msgs/Float64"},{"pin_id":"69a3e71bcd15153dec61d7f8:back_right_motor","name":"back_right_motor","direction":"output","msg_type":"std_msgs/Float64"}]')),
                 "POLYFLOW_INBOUND_CONNECTIONS": json.dumps(json.loads('[{"connection_id":"6a60ed7acb6c054e8f14025e","source_node_id":"6a60ec2dcb6c054e8f13ff4e","source_pin_id":"cmd_vel","target_pin_id":"cmd_vel_teleop"},{"connection_id":"6a60ee15cb6c054e8f1402db","source_node_id":"6a60edb6cb6c054e8f1402b4","source_pin_id":"cmd_vel_automated","target_pin_id":"cmd_vel_automated"}]')),
