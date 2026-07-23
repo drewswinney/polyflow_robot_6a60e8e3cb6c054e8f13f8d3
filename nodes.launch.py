@@ -11,7 +11,7 @@ def generate_launch_description():
             output="screen",
             additional_env={
                 "POLYFLOW_NODE_ID": "6a60ec15cb6c054e8f13feaa",
-                "POLYFLOW_PARAMETERS": json.dumps(json.loads('{"motor_id":"6a60eb9dcb6c054e8f13fcd4","mode":"speed","max_speed":6.2832,"reverse":true,"timeout_s":0}')),
+                "POLYFLOW_PARAMETERS": json.dumps(json.loads('{"motor_id":"6a60eb9dcb6c054e8f13fcd4","mode":"speed","max_speed":6.2832,"reverse":false,"timeout_s":0}')),
                 "POLYFLOW_CONFIGURATION": json.dumps(json.loads('{"namespace":null,"rate_hz":50,"lifecycle":null}')),
                 "POLYFLOW_PINS": json.dumps(json.loads('[{"pin_id":"69a3e541cd15153dec61d7af:command","name":"command","direction":"input","msg_type":"std_msgs/Float64"},{"pin_id":"69a3e541cd15153dec61d7af:state","name":"state","direction":"output","msg_type":"std_msgs/Float64"}]')),
                 "POLYFLOW_INBOUND_CONNECTIONS": json.dumps(json.loads('[{"connection_id":"6a60ec36cb6c054e8f13ff7d","source_node_id":"6a60ec32cb6c054e8f13ff5f","source_pin_id":"back_left_motor","target_pin_id":"command"}]')),
@@ -56,7 +56,7 @@ def generate_launch_description():
             output="screen",
             additional_env={
                 "POLYFLOW_NODE_ID": "6a60ec17cb6c054e8f13febb",
-                "POLYFLOW_PARAMETERS": json.dumps(json.loads('{"motor_id":"6a60eb92cb6c054e8f13fcbd","mode":"speed","max_speed":6.2832,"reverse":true,"timeout_s":0}')),
+                "POLYFLOW_PARAMETERS": json.dumps(json.loads('{"motor_id":"6a60eb92cb6c054e8f13fcbd","mode":"speed","max_speed":6.2832,"reverse":false,"timeout_s":0}')),
                 "POLYFLOW_CONFIGURATION": json.dumps(json.loads('{"namespace":null,"rate_hz":50,"lifecycle":null}')),
                 "POLYFLOW_PINS": json.dumps(json.loads('[{"pin_id":"69a3e541cd15153dec61d7af:command","name":"command","direction":"input","msg_type":"std_msgs/Float64"},{"pin_id":"69a3e541cd15153dec61d7af:state","name":"state","direction":"output","msg_type":"std_msgs/Float64"}]')),
                 "POLYFLOW_INBOUND_CONNECTIONS": json.dumps(json.loads('[{"connection_id":"6a60ec34cb6c054e8f13ff6e","source_node_id":"6a60ec32cb6c054e8f13ff5f","source_pin_id":"front_left_motor","target_pin_id":"command"}]')),
